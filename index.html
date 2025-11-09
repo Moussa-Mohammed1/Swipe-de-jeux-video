@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipe de jeux</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="app-container" id="swipeInterface">
+        <div class="card-stack">
+            <div class="game-card" id="gameCard">
+                <img src="" alt="" class="card-image" id="cardImage">
+                <div class="card-content">
+                    <h2 class="card-title" id="cardTitle"></h2>
+                    <p class="card-description" id="cardDescription"></p>
+                </div>
+                <div class="swipe-indicator like-indicator" id="likeIndicator">LIKE</div>
+                <div class="swipe-indicator dislike-indicator" id="dislikeIndicator">DISLIKE</div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-dislike" id="btnDislike"><i class="fa-solid fa-xmark"></i></button>
+            <button class="btn btn-like" id="btnLike"><i class="fa-solid fa-heart"></i></button>
+        </div>
+
+    </div>
+
+    <div class="app-container hidden" id="summaryInterface">
+        <div class="summary-header">
+            <h2>Vos jeux préférés</h2>
+            <button class="btn-restart" id="btnRestart">Recommencer</button>
+        </div>
+        <div class="summary" id="summaryGrid"></div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
